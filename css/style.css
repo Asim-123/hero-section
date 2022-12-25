@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    background-color: ghostwhite;
+    font-family: sans-serif;
+}
+
+header {
+    position: static;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background: white;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+   transform: translateY(30px);
+   transition: 1s;
+   text-decoration: double;
+   color: chartreuse;
+}
+
+nav ul button {
+    margin-left: 20px;
+}
+ 
+
+nav ul button {
+    border: transparent 2px solid;
+    border-radius: 30px;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    background-color: rgb(248, 73, 196);
+}
+
+nav ul button:hover {
+    transform: translateX(10px);
+    transition: 1s;
+    text-decoration: double;
+    background-color:chartreuse;;
+    color: white;
+ }
+
+nav ul button a {
+    text-decoration: none;
+    text-decoration: none;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px 0px 10px;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;;
+    width: 100%;
+    background-image: url('../img/img2.jpg');
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+
+.left-section h1 {
+    font-size: 50px;
+    text-align: center;
+    color: white;    
+}
+
+.left-section h4 {
+    text-align: center;
+    color: white;    
+    line-height: 30px;
+}
+
+.left-section button {
+    border: transparent 2px solid;
+    border-radius: 30px;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    background-color: rgb(140, 73, 248);
+    margin-left: 10px;
+}
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.left-section button a {
+    text-decoration: none;
+    text-decoration: none;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px 0px 10px;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.left-section button:hover {
+    transform: translateY(5px);
+    transition: 1s;
+    text-decoration: double;
+    background-color:chartreuse;;
+}
+
+
+@media only screen and (max-width: 600px) {
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 60%;
+} 
+header nav {
+    width: 100%;
+} 
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    line-height: 40px;
+    margin-right: 55px;
+} 
+ nav ul button {
+ margin-top: 20px;
+ width: 300px;
+
+} 
+
+.hero-section {
+    display: block;
+    text-align: start;
+}
+.hero-section h1{
+    font-size: 30px;
+    text-align: center;
+}
+.hero-section button {
+    margin-top: 10px;
+}
+}
